@@ -1,0 +1,46 @@
+#estrutura do projeto
+C:\Users\Fraiburgo\Desktop\tedste\studentRegistrationSQL
+
+    backeend: #divisao logica, por isso os ":" no final indicando que é um rotulo
+        resourses/         #contem os recursos necessarios para o projeto; (ex...imagens, documentacões )
+        models/            #contem as classes/representacores das entidades
+        services/          #contem as regras do negocio e logica da aplicacao
+        db/                # 
+        controllers/       #
+    frontEnd:   
+        ui/                #
+
+
+
+
+
+
+backend/:                     # Parte lógica do sistema (servidor, regras de negócio, banco de dados, APIs)
+│
+├── resources/                # Recursos auxiliares (imagens, arquivos estáticos, documentações, configs)
+│
+├── models/                   # Definições das entidades do domínio (classes como Usuario, Produto, etc.)
+│   └── usuario.py            # Exemplo de model
+│
+├── services/                 # Regras de negócio, lógica de aplicação (ex: autenticação, cálculo, etc.)
+│   └── auth_service.py       # Exemplo de serviço de autenticação
+│
+├── db/                       # Conexão e manipulação com o banco de dados (ORMs, scripts SQL, migrations)
+│   └── connection.py         # Script de conexão com o banco
+│
+├── controllers/              # Camada que recebe requisições e chama os serviços (rotas/API endpoints)
+│   └── usuario_controller.py # Exemplo de controlador
+│
+└── main.py                   # Arquivo principal para iniciar o backend (ponto de entrada do app)
+
+frontend/:                    # Interface do usuário (web, mobile ou desktop)
+│
+└── ui/                       # Arquivos visuais: HTML, CSS, JS ou componentes React/Vue
+    ├── index.html
+    ├── style.css
+    └── script.js
+
+
+
+
+    interface 
